@@ -1,0 +1,1709 @@
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 1 頁
+FinFET 自熱 -> 飽和區 ID-VG (Ion) 下降 % 文獻目錄
+矽 FinFET（含相鄰 nanosheet/GAA）self-heating 對飽和區汲極電流影響之量化文獻總表｜共 121 篇、去重、對抗式查證（0 篇
+判定捏造）｜IEEE 89 篇、非 IEEE 32 篇｜2026-07-04
+一、直接結論：飽和區 Ion 下降多少 %
+標準矽 FinFET、VDD~0.7 V、TA=300 K、電熱 vs 等溫，逐字確認的數字落在 ~7-11%（與判準帶 bulk 3-12%、SOI 
+8-17% 一致）。特殊結構（DMG 通道工程、高應力、±1.5 V 高過驅）會更高，屬離群值。核心逐字錨點：
+• 14nm FinFET n 7.26% / p 8.91% @VDS=0.7V 飽和（Physica Scripta 100, 035937, 2025, 10.1088/1402-4896/adb2f1）
+← 最貼你的情境
+• 3nm bulk FinFET n 10.6% / p 21.6% @VG=VD=0.7V（Sci. Rep. 16, 16839, 2026；p 值含應力糾纏，非硬上限）
+• 多鰭 SOI FinFET n >10% / p >7% @±1.5V（Nam, SST 29, 115021, 2014）；bulk FinFET 7.8%（Myeong, TED 2019, 
+STI 研究）
+判準：飽和 Ion 差 >20%（排除 DMG/JL 特例）代表 SHE 過強->查 thermode 是否過絕熱；<1% 代表 SHE 被邊界條件抹掉->查
+ thermode 是否貼太近通道。交叉檢核比值 ΔIon% ÷ ΔT ~ 0.10-0.20 %/K。
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 2 頁
+二、電熱 vs 等溫（electrothermal-vs-isothermal）— 矽 FinFET（16 篇）
+這是「模擬中 SHE 效應」的正確定義：同一 deck 開/關晶格加熱之差。標「圖層級」者原文有曲線但未印出單一 %，引用數字前需
+自讀原圖。
+論文 / IEEE / 年 / DOI
+元件
+飽和 Ion 下降 % / 關鍵數字
+偏壓 / ΔT
+查證
+Impact of Self-Heating on 
+Negative-Capacitance FinFET: 
+Device-Circuit … (IEEE, 2021) DOI: 
+10.1109/ted.2021.3059180
+14-nm NC-FinFET 與標準
+14-nm FinFET 基線
+not accessed(全文付費牆,摘要無 %;
+找不到開放 PDF)
+bias:not accessed | dT:not
+accessed(摘要無溫度數值)
+plausible_
+unveri
+Transistor Self-Heating: The Rising 
+Challenge for Semiconductor Testin… 
+(IEEE, 2021) DOI: 10.1109/vts50974.2021.9
+441002
+n/p 型 FinFET(TCAD 以 Intel
+14nm 量測數據校準)
+figure-level;已證實摘要確無任何 Ion
+% 數值
+bias:摘要未載 | dT:摘要無數值(
+僅述通道內侷限熱)
+confirmed
+A Junctionless Accumulation Mode 
+NC-FinFET Gate Underlap Design for Im… 
+(IEEE, 2020) DOI: 10.1109/ted.2020.29978
+48
+7-nm-node junctionless
+accumulation-mode
+negative-capacita…
+no % printed in abstract: Ion/Ioff
+ratio and peak gm reported 'with
+and without self-heating effects' at
+figure level; f…
+bias:not printed in abstract |
+dT:TL = 321 K confirmed in
+abstract for propo…
+confirmed
+Thermal-Aware Shallow Trench Isolation 
+Design Optimization for Minimiz… (IEEE, 
+2019) DOI: 10.1109/ted.2018.2882577
+sub-10nm bulk FinFET、SOI
+FinFET 與 vertical FET(各含
+HP/LP 兩種…
+bulk FinFET:全 SiO2 STI 基準之 ION
+degradation rate = 7.8%;改用全
+Al2O3 降至 3%(HP 方案,IOFF +36%);
+上層 20nm SiO2 / 下層 80nm Al2O3
+混合降…
+bias:未於已讀文本載明(推測為
+節點標稱 VDD,未證實) |
+dT:TL,max 隨 STI 設計變化(數
+值在全文,未讀取)
+confirmed
+Study of Self-Heating Effects in Silicon 
+Nano-Sheet Transistors (IEEE, 2018) DOI: 
+10.1109/edssc.2018.8487097
+Si lateral GAA stacked 
+nanosheet FET (single & 
+multi-chann…
+FinFET: 2.4% ON-current
+degradation from SHE; NSFET:
+1.8% (adjacent, label separately) —
+both CONFIRMED verbatim from
+ab…
+bias:not stated in abstract
+(DC TCAD on-state p… |
+dT:not in abstract; full text
+not accessed
+confirmed
+3D Coupled Electro-Thermal FinFET 
+Simulations Including the Fin Shape … 
+(IEEE, 2014) DOI: 10.1109/sispad.2014.693
+1615
+奈米級矽 SOI FinFET(GARAND
+模擬,含 bulk FinFET 範例;非矩
+形真實 fin 形狀)
+圖層級;% 數字未印於可取得文字
+(Enlighten 無全文、IEEE 阻擋)——引
+用數字前必讀原文 ID-VD 圖
+bias:not accessed | dT:本文數
+值未取得;同系列 SUPERTHEM
+E/TED 2015 姊妹作:κ 降低後 …
+confirmed
+Simulation of self-heating effects in 30nm 
+gate length FinFET (IEEE, 2008) DOI: 
+10.1109/ulis.2008.4527143
+30nm gate length SOI FinFET
+未取得——全文付費牆內；候選條目
+未宣稱任何 %，摘要亦無數字
+bias:未取得（付費牆） | dT:未
+取得（付費牆）
+confirmed
+Role of mechanical stress on the 
+electrothermal and OFF state current … (非,
+ 2026) DOI: 10.1038/s41598-026-46949-1
+Silicon bulk FinFET, 3 nm
+node, Lg=16 nm, fin height
+64 nm…
+n-FinFET: ID reduced 10.6% with
+SHE (0% carbon S/D), 8.2% with
+10% carbon; p-FinFET: ID reduced
+21.6% with SHE at 90% Ge…
+bias:VG = VD = 0.7 V
+(saturation), TA = 300 K |
+dT:Peak lattice T: n-FinFET
+363 K at 10% carb…
+confirmed
+A modeling method for self-heating 
+effect of FinFET with wide applicat… (非, 
+2025) DOI: 10.1088/1402-4896/adb2f1
+14 nm FinFET(n 與 p),模型延伸
+驗證至 10 nm 與 7 nm 製程
+IDS 最大衰減:pFinFET 8.91%、
+nFinFET 7.26%(含 SHE vs 無
+SHE)@VDS=0.7 V(飽和區)
+bias:VDS=0.7 V(兩個 % 對應之
+偏壓,已從 IOP 全文頁確認)
+;VGS 掃描 … | dT:最高 lattice
+temperature 399.9 K(ΔT~100
+K @T…
+confirmed
+Self-heating effect in nanoscale SOI 
+Junctionless FinFET with differen… (非, 
+2024 (arXiv v1); original conference paper 
+2021) DOI: https://arxiv.org/abs/2403.062
+71
+SOI junctionless FinFET; Lg
+10-40 nm, Si channel
+thickness…
+Figure-level only, no printed %.
+Verbatim quote confirmed in full
+text: 'SHE in the nanoscale SOI JL
+FinFET induces subs…
+bias:VDS = 0.75 V for Fig. 3
+ID-VG comparison (… |
+dT:Lattice T increases with Lg
+(Fig. 5) and w…
+confirmed
+Impact of Variation in Fin Thickness and 
+Self-Heating on the Output Ch… (非, 2024 
+(online 2024-01-04; print issue April 
+2024)) DOI: 10.1007/s12633-023-02835-3
+Triangular-gate silicon
+FinFET (TG-FinFET), fin
+thickness …
+% still not obtained — abstract
+numerals are truncated in BOTH
+Springer render and colab.ws
+mirror ('SHE causes an avera…
+bias:not extractable from
+accessible sources | dT:not
+extractable from accessible
+sources
+plausible_
+unveri
+Physical insights of interface traps and 
+self-heating effect on electr… (非, 2024) 
+DOI: 10.1088/1402-4896/ad16b0
+SOI Dual-Material-Gate
+(DMG) FinFET, Lg = 16
+nm(convention…
+SHE 單獨:25.03% 汲極電流退化
+(conventional);SHE+traps 合併:
+30.4%/40.96%(conv,
+uniform/Gaussian)、
+45.2%/54.5%(overlap)、
+37.2%/52.8%(un…
+bias:VDS = 0.5 V, VGS 掃 
+0->1.5 V(IOP 頁面核實)。注意:
+VG… | dT:摘要無數值(已核實)
+confirmed
+Analysis of thermal stability in underlap 
+and overlap DMG FinFETs incl… (非, 2024) 
+DOI: 10.1016/j.mejo.2024.106152
+SOI DMG FinFET(gate
+underlap / overlap 通道工程;
+與 ad16b0 同組、Lg…
+SHE 造成之最大 ON-current 下降
+41.73%(gate-overlap 設計,但
+overlap 之絕對 ION 仍最大);最大
+off-current 下降 69.01%(underlap)
+——兩數值經出版者摘要文字核實
+bias:摘要未載(全文未讀取) |
+dT:摘要無數值
+confirmed
+Impact of self-heating on RF/analog and 
+linearity parameters of DMG Fi… (非, 
+2023) DOI: 10.1016/j.mejo.2023.105765
+SOI DMG FinFET(conventiona
+l / overlap / underlap)
+摘要無 Ion %(已核實);gm,max 退化
+8% / 28.3% / 6.9%,gd 退化 30.3% /
+40.9% / 33.3%(conventional /
+overlap / underlap)——經摘要原文
+核實
+bias:摘要未載(全文未讀取) |
+dT:摘要無數值
+confirmed
+An Investigation into the Comprehensive 
+Impact of Self-Heating and Hot… (非, 
+2022) DOI: 10.3390/electronics11172753
+22 nm n-channel bulk
+FinFET, L=22 nm, fin height
+40 nm, fi…
+Figure-level only, no % printed: 'the
+drain current in the linear region is
+almost unchanged, while the drain
+saturation…
+bias:Vds 0-1 V, Vgs 0-1 V 
+(Table 2), TA = 300 K | 
+dT:Max lattice T rises 314.37 
+K -> 360.76 K a…
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 3 頁
+論文 / IEEE / 年 / DOI
+元件
+飽和 Ion 下降 % / 關鍵數字
+偏壓 / ΔT
+查證
+Dynamic Self-Heating Effects of Bulk and 
+SOI FinFET with Realistic Dev… (非, 2015) 
+DOI: 10.5573/ieie.2015.52.10.064
+Bulk FinFET 與 SOI
+FinFET(realistic 工業級 3D 結
+構)
+figure-level;已證實摘要僅定性:穩態下
+SOI FinFET 驅動電流退化較 bulk 嚴
+重;高速邏輯操作下 SOI 之動態 SHE 與
+bulk 相當(realistic 結構尤然),無任何
+%
+bias:摘要未載 | dT:摘要無數值
+confirmed
+三、電熱 vs 等溫 — 相鄰 nanosheet / GAA（14 篇，趨勢對照用）
+論文 / IEEE / 年 / DOI
+元件
+飽和 Ion 下降 % / 關鍵數字
+偏壓 / ΔT
+查證
+Influences of Source/Drain Extension 
+Region on Thermal Behavior of Sta… 
+(IEEE, 2024) DOI: 10.1109/ted.2024.33515
+96
+Stacked nanosheet FET with
+S/D extension length LEXT
+swept…
+~10% ION degradation attributed
+to SHE at LEXT = 8 nm (longer
+extension lowers absolute ION but
+carries a smaller SHE pe…
+bias:not stated in abstract |
+dT:not printed in abstract
+confirmed
+Electro-Thermal Characteristics of 
+Junctionless Nanowire Gate-All-Arou… 
+(IEEE, 2023) DOI: 10.1109/ted.2023.32682
+49
+sub-5 nm 節點 junctionless 奈
+米線 GAA(SOI)
+SHE 造成約 10% ON-current 劣化
+——摘要逐字確認:『SHE rises the
+peak of TL, causing ~10%
+ON-current [degradation]』
+bias:on-state(摘要未列
+VGS/VDS 數值) | dT:通道內非
+均勻 TL 峰值(摘要無數值)
+confirmed
+Device Design Aware and Interface 
+Thermal Resistance Assisted Self-Hea… 
+(IEEE, 2022) DOI: 10.1109/icee56203.2022.
+10117683
+GAA 奈米片 FET(NSHFET),並與
+SOI FinFET、bulk FinFET 做電
+熱特性公平比較
+figure-level(摘要逐字證實以 drain
+current 百分比變化比較 SOI FinFET /
+bulk FinFET / NSHFET,數值僅在內文
+圖表,未能取得)
+bias:未載於摘要(未讀取全文) |
+dT:空間晶格溫度梯度(數值在全
+文,未讀取)
+confirmed
+Geometrical influence on Self Heating in 
+Nanowire and Nanosheet FETs u… (IEEE, 
+2020) DOI: 10.1109/edtm47692.2020.9117
+971
+Stacked nanowire vs
+nanosheet GAA-FETs
+(Sentaurus TCAD), s…
+SHE on-current degradation 3.01%
+(stacked nanowires) vs 6.42%
+(single nanosheet) at same output
+current; optimized stack…
+bias:not stated in abstract |
+dT:not printed in abstract
+confirmed
+Self-Heating and Electrothermal 
+Properties of Advanced Sub-5-nm Node 
+N… (IEEE, 2020) DOI: 10.1109/led.2020.29
+98460
+Sub-5-nm 節點 GAA
+nanoplate(nanosheet)FET;變
+化堆疊通道數、金屬閘極厚度、
+通道寬…
+圖級,% 未印於摘要;on-current
+degradation 隨堆疊數/閘金屬厚度/寬
+度分析,但退化的比較基準(ET vs
+isothermal 或幾何參照)無法自摘要確
+認
+bias:摘要未載明 | dT:圖級
+(TL,max 有分析),未取得
+plausible_
+unveri
+Analysis of Self Heating Effect in DC/AC 
+Mode in Multi-Channel GAA-Fie… (IEEE, 
+2019) DOI: 10.1109/ted.2019.2942074
+三通道堆疊奈米線 GAA
+FET(SNU Shin 團隊)
+DC 模式 Ion 劣化 3.8%(於
+ΔTmax=65 K)——摘要逐字確認:『
+as ΔTmax increases to 65 K, the
+transistor suffers from an Ion
+degradation of 3…
+bias:DC on-state(摘要未列
+VGS/VDS 數值);AC 依頻率(飽
+和於約 4… | dT:DC ΔTmax=65
+K;AC 4 GHz 時 ΔTmax~40
+K;duty 2…
+confirmed
+Analysis on Self-Heating Effects in 
+Three-Stacked Nanoplate FET (IEEE, 2018) 
+DOI: 10.1109/ted.2018.2862918
+Three-stacked nanoplate
+(nanosheet) FET; TCAD
+calibrated t…
+figure-level only; no percentage
+printed in abstract
+bias:not stated in abstract |
+dT:not printed in abstract
+confirmed
+The Impact of Self-Heating on 
+Single-Event Transient Effect in Triple-… (
+非, 2026 issue (Electronics 15(1), January 
+2026); Crossref records online year 2025) 
+DOI: 10.3390/electronics15010085
+Triple-layer stacked Si
+nanosheet GAA FET, Lg = 12
+nm, VDD…
+Ion suppressed by ~1.81% with
+SHE; on/off ratio -1.82% —
+CONFIRMED verbatim via
+Google-indexed full text: 'the
+self-heat…
+bias:VDD = 0.65 V, VGS
+swept 0-0.65 V, TA = 300… |
+dT:~472 K lattice
+temperature corroborated:
+s…
+confirmed
+Systematic performance benchmarking 
+of nanosheet and FinFET: An intrin… (非, 
+2025) DOI: 10.1016/j.microrel.2025.11558
+8
+Multi-fin silicon FinFET vs
+vertically stacked nanosheet
+F…
+Not obtained — no % accessible
+(abstract-level only; ScienceDirect
+403 blocks full text)
+bias:not extracted (full text
+not accessed) | dT:not
+extracted
+plausible_
+unveri
+Accurate Evaluation of Electro-Thermal 
+Performance in Silicon Nanoshee… (非, 
+2024) DOI: 10.3390/nano14121006
+sub-3 nm 節點 Si 堆疊奈米片
+FET(n 與 p),Lg=12 nm、
+WNS=25 nm、TNS=5 n…
+圖級、無單一 %:Ion_SHE 在 Vco 以上
+低於 Ion_noSHE(Vco=+0.8 V nFET /
+-0.65 V pFET,全文逐字確認);Vco 以下
+SHE 略增電流。方案間差:TIS 之
+Ion_SHE 比 BOX 高 …
+bias:VDD=0.7 V(Table 1),熱邊
+界 heat sink 300 K;DC … |
+dT:DC:TIS 比 BOX 低 59.6
+K(n)/50.4 K(p);RO 暫態:T…
+confirmed
+Trap and self-heating effect based 
+reliability analysis to reveal earl… (非, 
+2023) DOI: 10.1016/j.sse.2022.108546
+Vertically three-stacked Si
+nanosheet FET, LG = 12 nm,
+she…
+NO numeric % anywhere in full
+text. Fig. 2(c) (p.3) shows ION
+degradation in IDS-VGS with vs
+without SHE (baseline) at V…
+bias:VDS = 0.7 V throughout;
+VGS swept 0-0.7 V;… | dT:Not
+printed numerically; hotspot
+located a…
+confirmed
+The Impact of Ambient Temperature on 
+Electrothermal Characteristics in… (非, 
+2023) DOI: 10.3390/nano13222971
+3 層垂直堆疊奈米片電晶體、
+1-32 個橫向 stack;模擬單元
+Lg=16 nm、WNS=20 nm、
+TNS=6…
+圖級、無印出 %:Fig. 10b 顯示高 VGS
+時含 SHE 之 IDS 低於不含 SHE;全文確
+認無任何明確 SHE 電流下降 %(僅正規
+化 ΔIDS/IDS 形式)
+bias:VGS=VDS=0.7 V、
+TA=300 K(SHE 數值);另有 TA
+掃描 30… | dT:ΔTmax=149
+K(Nstack=1、VGS=VDS=0.7
+V、Tamb=30…
+confirmed
+Investigation of Analog/RF and linearity 
+performance with self-heating… (非, 
+2023) DOI: 10.1016/j.mejo.2023.105904
+垂直堆疊 GAA nanosheet
+FET(3 片);ADJACENT,非
+FinFET
+純 SHE(有/無 lattice heating)之 Ion 
+% 仍為圖形層級,摘要未印出。注意:摘
+要印有「ON current 降低 9.4%」但
+該數字對應 250->400 K 溫度變化(含 
+SHE 之累積效應),依分類法應歸 ta_s…
+bias:摘要未載明個別偏壓;溫度
+範圍 250-400 K | dT:摘要未給
+出
+confirmed
+Self-heating effect on logic performance 
+of 6T-SRAM based on CFET devi… (非, 
+2022) DOI: 10.35848/1347-4065/ac3c1b
+CFET (vertically stacked
+N-over-P): fin-based CFET
+(FBC-CF…
+Device-level Ion % NOT reported
+— confirmed by reading article
+meta/abstract text; paper
+quantifies circuit level only: …
+bias:SRAM read/write
+operation; RNM -29 mV
+figu… | dT:~10 K
+temperature rise under a
+single read…
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 4 頁
+四、量測（pulsed-vs-DC / TRE）— SHE 的實測定義（8 篇）
+實體元件的 SHE 效應 = DC（完全加熱）與 pulsed/fast I-V（抑制加熱）之差。多數 FinFET % 為圖層級；脈寬需  1 ns 才除得淨
+SHE（τ_th~10-20 ns）。
+論文 / IEEE / 年 / DOI
+元件
+飽和 Ion 下降 % / 關鍵數字
+偏壓 / ΔT
+查證
+In-Situ Monitoring of Self-Heating Effect 
+in Aggressively Scaled FinFE… (IEEE, 2020) 
+DOI: 10.1109/irps45951.2020.9129591
+Aggressively scaled SOI
+FinFETs (Zhejiang Univ., Yi
+Zhao g…
+not printed in accessed material;
+abstract confirms SHE is
+suppressed when heating time is
+short and cooling time suffic…
+bias:stress-phase bias with
+heating/cooling int… |
+dT:3-D channel temperature-
+rise maps vs heati…
+confirmed
+Impact of Self-Heating Effect on 
+Transistor Characterization and Relia… 
+(IEEE, 2019) DOI: 10.1109/jeds.2019.29110
+85
+Lg=20nm bulk 與 SOI FinFET、
+14nm 多鰭 FinFET（in scope）
+；Lg=30nm…
+FinFET：圖層級（Fig. 4，四種速度之
+ID-VD，速度愈快 Ion 愈高；SOI
+FinFET 之 pulsed-vs-DC on-current
+差異為所有受測結構中最嚴重），全
+文未印出單一 FinFET %。文中唯二印
+出的 %…
+bias:HCI 應力 VG=VD=1.1V；
+彈道傳輸量測 298-423K；I-V
+於 0.… | dT:FinFET 通道達熱平
+衡升溫約 60K（planar bulk 僅
+約 10K）；通…
+confirmed
+Ultra fast (<1 ns) electrical 
+characterization of self-heating effect … 
+(IEEE, 2017) DOI: 10.1109/iedm.2017.8268
+520
+14nm 節點商用 Si bulk FinFET
+未取得——IEDM 全文付費牆內，
+pulsed-vs-DC ID 差異為圖層級；引
+文脈絡（Semantic Scholar citation
+contexts）亦查無被引用的 %。姊妹
+篇 JEDS 2019 顯示 FinFET dT~60K…
+bias:多組 VGS/VDS 組合（具
+體值未取得）；HCI 部分為
+GHz 隨機訊號 | dT:摘要層級：
+任意工作條件下可萃取暫態與
+穩態通道溫度；具體 K 值在付
+費牆內（姊妹篇 J…
+confirmed
+Investigation of Self-Heating Effect on 
+Ballistic Transport Characteri… (IEEE, 
+2017) DOI: 10.1109/ted.2016.2646907
+ultrascaled Si FinFETs（研究元
+件；Lg 未於可及文本揭露）
+未取得——付費牆；摘要僅定性稱
+DC 法因嚴重 SHE 使彈道傳輸參數萃
+取出現 essential discrepancies，%
+在圖層級
+bias:未取得（付費牆） | dT:未
+取得（付費牆）
+confirmed
+A Thermal-Aware Device Design 
+Considerations for Nanoscale SOI and 
+Bul… (IEEE, 2016) DOI: 
+10.1109/ted.2015.2502062
+sub-22 nm SOI 與 bulk Si
+FinFET
+摘要無 %——pulse rise-time 法取得
+等溫特性(隱含 pulsed vs DC 電流差在
+圖級);全文未能存取
+bias:摘要未載明 | dT:未取得
+confirmed
+Hot carrier reliability characterization in 
+consideration of self-heat… (IEEE, 2016) 
+DOI: 10.1109/irps.2016.7574505
+Samsung production FinFET
+(14nm-class)
+none; no Ion % — reliability-lifetime
+ class metric only
+bias:not accessed (full text
+paywalled) | dT:not accessed
+confirmed
+A Reflection-Based Ultra-Fast 
+Measurement Method for the 
+Continuous Ch… (非, 2025) DOI: 
+10.3390/electronics14132634
+Commercial-ready scaled
+short-channel transistors,
+describ…
+Figure-level only: Fig. 4 shows
+continuous ID degradation vs time
+(first ~50 ns) at chuck temperatures
+223-373 K; no ste…
+bias:VG = 700 mV, VD = 690
+mV (Fig. 5a heat-fre… |
+dT:Real-time T(t) extracted
+via Iheat-free = …
+value_corr
+ected
+Experimental investigation of self heating 
+effect (SHE) in multiple-fi… (非, 2014) DOI: 
+10.1088/0268-1242/29/11/115021
+金屬閘多鰭 SOI FinFET：Lg
+90nm-5um、Wfin 20-35nm、
+Hfin 58nm、2-50 平…
+n-channel >10%、p-channel >7% 
+飽和電流劣化（於最短 Lg=90nm 時
+最嚴重）——IOP 全文確認
+bias:飽和區：n-channel
+VGS=VDS=1.5V；p-channel
+VGS=V… | dT:各幾何之
+Rth/dT 於圖中給出；Rth 隨
+Lg 縮短、鰭數減少、鰭寬變窄
+而增加…
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 5 頁
+五、熱阻 / 溫升導向（Rth、ΔT；45 篇）
+主要提供 Rth / ΔT（thermode SurfaceResistance 的校準標的），未必印出電流 %。single-fin Rth 約 1-4 MK/W；多鰭多指 RF
+結構約 34 kK/W。
+論文 / IEEE / 年 / DOI
+元件
+Rth / ΔT / 關鍵數字
+偏壓 / 其他
+查證
+Multiscale Thermal Simulation for 
+GAAFET With First-Principles-Based B… 
+(IEEE, 2025) DOI: 10.1109/ted.2025.35928
+87
+堆疊奈米片 GAAFET(約 10 nm
+特徵尺寸)
+摘要未給數值;僅定性指出 gray
+BTE/HDE 低估主動區溫度、需
+nongray BTE
+無(摘要未載)
+confirmed
+Transient Thermal Model of Advanced 
+Nanotransistors: A Case Study of C… 
+(IEEE, 2025) DOI: 10.1109/ted.2025.35741
+24
+monolithic CFET (stacked
+nFET-on-pFET) as case study;
+mode…
+no values in abstract;
+Fourier-vs-DPL transient
+temperature differences shown
+figure-level only
+not applicable / not
+accessible
+confirmed
+Impact of Back End of Line (BEOL) and 
+Ambient Temperature on Self-Heat… 
+(IEEE, 2024) DOI: 10.1109/edtm58488.202
+4.10511833
+twin 奈米線 GAA FET(junction
+less vs inversion mode)
+摘要未載
+摘要未列 VGS/VDS;RTH 與 TA
+為掃描變數
+reclassifie
+d
+Understanding the Self-Heating Effects 
+Measured With the AC Output Con… 
+(IEEE, 2024) DOI: 10.1109/ted.2024.34691
+87
+advanced-node bulk silicon
+FinFETs, short- and
+long-channe…
+abstract confirms: AC-gout
+overtemperature = area-averaged
+overtemperature across active
+area; largely underestimates pe…
+gate-voltage dependence
+discussed; specific VGS/VDS
+values figure-level, not
+accessed
+confirmed
+Influence of the Gate Oxide and Back 
+Oxide Material Types on Self-heat… (IEEE, 
+2024) DOI: 10.1109/edm61683.2024.1061
+5156
+SOI junctionless FinFET（
+Sentaurus 3D TCAD）
+晶格溫度隨閘極氧化層厚度增加大致
+單調下降、隨背氧化層厚度增加單調
+上升（歸因於材料熱導率差異與接觸
+面積變化；數值為圖級）
+未取得（全文未讀）
+confirmed
+Theoretical Study of Self-Heating-Induced
+ Thermal Stress Effects on Qu… (IEEE, 
+2023) DOI: 10.1109/ted.2023.3280865
+p-type ultrathin-body silicon
+FinFET; multiple crystal ori…
+not printed in abstract
+not accessed
+confirmed
+Localized thermal effects in 
+Gate-all-around devices (IEEE, 2023) DOI: 
+10.1109/irps48203.2023.10117903
+Intel gate-all-around
+(RibbonFET-class) devices,
+thermal r…
+temperature-rise data collected at
+transistor scale; values figure-level,
+not in abstract
+not accessed
+confirmed
+Self-Heating in iN8-iN2 CMOS Logic 
+Cells: Thermal Impact of Architectu… 
+(IEEE, 2022) DOI: 10.1109/vlsitechnologya
+ndcir46769.2022.9830228
+imec 節點標準邏輯 cell:FinFET(
+iN8-iN5)、nanosheet(iN5/iN
+3)、forksh…
+已自摘要查證:excess channel
+heating(相對 cell boundary)baseline
+ 0.8-1.6 K;turbo 10-19 K
+cell 級操作情境:baseline =
+0.7VDD @ 2 GHz clock;turbo
+= 1.4VDD @ 6 GHz clock
+confirmed
+Self-Heating and Thermal Network 
+Model for Complementary FET (IEEE, 
+2022) DOI: 10.1109/ted.2021.3130010
+CFET (vertically stacked
+complementary n/p device);
+array-…
+figure-level; thermal-network
+lattice T drives lifetime prediction
+not accessed
+confirmed
+Thermal Conductivity Model to Analyze 
+the Thermal Implications in Nano… (IEEE, 
+2022) DOI: 10.1109/ted.2022.3208848
+SOI-based junctionless
+nanowire (JL-NW) FET at
+sub-5-nm te…
+not in abstract
+not accessible
+confirmed
+FEOL Self-heating and BEOL 
+Joule-heating Effects of FinFET 
+Technology … (IEEE, 2020) DOI: 
+10.1109/iirw49815.2020.9312859
+Advanced bulk FinFET
+(taller/narrower fin, shorter
+CPP) wi…
+Abstract-verified: SHE aggravated
+by compact layout footprint;
+taller/narrower fin and shorter CPP
+give higher dT_sh; st…
+not accessed
+confirmed
+Impact of Geometry, Doping, 
+Temperature, and Boundary Conductivity 
+on … (IEEE, 2020) DOI: 
+10.1109/tdmr.2020.2964734
+14-nm bulk 與 SOI FinFET(實
+驗 ID-VG 校準之 TCAD)
+not accessed(摘要無數值)
+not accessed
+confirmed
+Advanced Self-heating Model and 
+Methodology for Layout Proximity Effec… 
+(IEEE, 2020) DOI: 10.1109/irps45951.2020.
+9128322
+先進 FinFET 技術（Samsung
+foundry）
+ΔTsh 隨佈局鄰近之分佈（摘要以
+ΔTsh 為核心量，無具體數值）
+摘要未給；全文未讀
+confirmed
+Impact of Self-heating on Performance 
+and Reliability in FinFET and GA… (IEEE, 
+2019) DOI: 10.1109/isqed.2019.8697786
+7nm bulk/SOI FinFET 與 5nm
+GAAFET 標準元件/邏輯閘子結
+構（GAA 部分為 adjac…
+邏輯閘平均升溫：7nm SOI FinFET
++12K、bulk FinFET +5K、5nm
+GAAFET +17K（摘要與全文 Fig. 7 一
+致）
+電路級 workload（activity
+factor 加權），非單一
+VGS/VDS 偏壓點
+reclassifie
+d
+Investigation of self-heating effect on 
+stacked nanosheet GAA transist… (IEEE, 
+2018) DOI: 10.1109/vlsi-tsa.2018.8403821
+水平堆疊三層 GAA nanosheet
+電晶體(北京大學組),含簡化
+BEOL
+圖級數據,未能取得
+摘要未載明
+reclassifie
+d
+Layout Design Correlated With 
+Self-Heating Effect in Stacked 
+Nanosheet… (IEEE, 2018) DOI: 
+10.1109/ted.2018.2825498
+5 nm 節點水平堆疊三層 GAA
+nanosheet 電晶體,單元件至元
+件陣列
+圖級,未取得
+摘要未載明
+confirmed
+Modeling of FinFET Self-Heating Effects 
+in multiple FinFET Technology … (IEEE, 
+2018) DOI: 10.1109/vlsit.2018.8510657
+Production bulk FinFETs
+across multiple technology
+generat…
+Abstract confirms taller/narrower
+fins in newer generations increase
+FSH; per-generation dT values are
+figure-level only…
+not accessed
+confirmed
+Ambient temperature and layout impact 
+on self-heating characterization… (IEEE, 
+2018) DOI: 10.1109/irps.2018.8353640
+Bulk FinFET (14nm-class),
+multi-fin/multi-finger layouts
+Abstract-verified new number:
+ambient temperature can affect the
+self-heating MEASUREMENT by up
+to 70% (first such demon…
+not accessed
+value_corr
+ected
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 6 頁
+論文 / IEEE / 年 / DOI
+元件
+Rth / ΔT / 關鍵數字
+偏壓 / 其他
+查證
+Bottom-up methodology for predictive 
+simulations of self-heating in ag… (IEEE, 
+2018) DOI: 10.1109/irps.2018.8353650
+aggressively scaled bulk
+FinFET process technologies
+(GF 1…
+not accessed
+not accessed
+confirmed
+Self-Heating Effects Investigation on 
+Nanoscale FinFET and Its Thermal… (IEEE, 
+2018) DOI: 10.1109/icsict.2018.8564853
+sub-14 nm FinFET（TCAD，
+以實驗資料校準）
+熱散逸對 S/D extension 尺寸敏感；
+摻雜濃度相關之溫度變化（可藉縮短
+extension 降低）；fin 寬/高影響電特
+性、hotspot 位置與集總 Rth
+未取得（全文未讀）
+confirmed
+A Novel Approach to Localize the 
+Channel Temperature Induced by the 
+Se… (IEEE, 2018) DOI: 
+10.1109/edtm.2018.8421479
+14 nm high-k/metal-gate
+bulk FinFETs (UMC), n and p
+pFinFET channel ~170 K hotter
+than nFinFET (abstract-confirmed;
+attributed to embedded SiGe S/D
+heat dissipation); hotte…
+saturation-region operation
+for RTN thermometry; exact
+VGS/VDS not in accessed
+material
+confirmed
+Analysis of DC Self Heating Effect in 
+Stacked Nanosheet Gate-All-Aroun… 
+(IEEE, 2018) DOI: 10.1109/edtm.2018.8421
+495
+Vertically stacked nanosheet
+GAA transistor (SNU/KNUT
+TCAD…
+figure-level per abstract ('great
+lattice temperature variations');
+values not in abstract
+DC bias (values not in
+abstract; full text not
+accessed)
+reclassifie
+d
+Modeling of Effective Thermal Resistance 
+in Sub-14-nm Stacked Nanowire… (IEEE, 
+2018) DOI: 10.1109/ted.2018.2863730
+sub-14nm FinFET 與堆疊奈米
+線 FET(含大型 layout:多鰭、多
+gate finger)
+Rth vs 幾何設計變數(鰭數、finger 數、
+奈米線堆疊數/尺寸);適用於大 layout
+之 Rth 估算
+不適用(Rth 模型)
+confirmed
+Self-heating measurement 
+methodologies and their assessment on 
+bulk Fi… (IEEE, 2017) DOI: 
+10.1109/iirw.2017.8361226
+bulk FinFET (GlobalFoundries
+technology), wafer-level
+test…
+no absolute dT/Rth printed in
+abstract; key quantified result:
+self-heating underestimated by
+35% when sensed at a neigh…
+not verified (full text not
+accessed)
+confirmed
+Self-heating in FinFET and GAA-NW 
+using Si, Ge and III/V channels (IEEE, 
+2016) DOI: 10.1109/iedm.2016.7838425
+Si (and Ge, III-V) FinFET and
+GAA nanowire, industry-relev
+…
+Figure-level dT/Rth comparisons
+across architectures and
+processing options; not accessed
+not accessed (closed access)
+value_corr
+ected
+Self-Heating Measurement of 14-nm 
+FinFET SOI Transistors Using 2-D Tim… 
+(IEEE, 2016) DOI: 10.1109/ted.2016.25370
+54
+14-nm-node SOI FinFET
+(IBM), silicon; multiple
+geometries/…
+figure-level only; not printed in
+abstract
+not printed in abstract
+confirmed
+Characterization of self-heating leads to 
+universal scaling of HCI deg… (IEEE, 2016) 
+DOI: 10.1109/irps.2016.7574506
+Multi-fin SOI FinFETs (sub-14
+nm class), fin-count series
+fin-count-dependent lattice
+temperature rise (values
+figure-level, not in accessed text)
+HCI stress bias; Tsub and AC
+frequency swept; exact
+values not in accessed
+material
+confirmed
+Self-heating on bulk FinFET from 14nm 
+down to 7nm node (IEEE, 2015) DOI: 
+10.1109/iedm.2015.7409678
+Bulk Si (and strained-Ge)
+FinFET, 14nm/10nm/7nm
+nodes
+Heat confinement increases ~20%
+per 0.7x node scaling for Si
+channel, and an additional ~57%
+for strained-Ge channel (ab…
+not accessed (closed access)
+confirmed
+Investigation of Self-Heating Effect on 
+Hot Carrier Degradation in Mul… (IEEE, 
+2015) DOI: 10.1109/led.2015.2487045
+Multiple-fin SOI FinFETs
+(fin-number split)
+higher T rise at larger fin number
+(numeric values figure-level, not in
+accessed text)
+HCD stress bias; exact values
+not in accessed material
+confirmed
+Thermal behavior of self-heating effect in 
+FinFET devices acting on ba… (IEEE, 2015) 
+DOI: 10.1109/irps.2015.7112696
+先進 bulk FinFET 技術（TSMC）
+，含多金屬層金屬電阻溫度感
+測器測試結構
+摘要無數值；內容涵蓋隨供電元件數
+的溫度飽和、各金屬層溫升、SHE 與
+Joule heating 耦合效應
+摘要未給；全文未讀
+confirmed
+Self-heating effect in FinFETs and its 
+impact on devices reliability c… (IEEE, 
+2014) DOI: 10.1109/irps.2014.6860642
+Production FinFET
+(16nm-class, bulk) vs planar
+reference
+Not printed in abstract; dT
+numbers remain full-text-only —
+do not quote until read
+Abstract recommends HCI
+stress condition Vg =
+0.6~0.8Vd to keep
+power/temperature
+reasonable (abstra…
+confirmed
+Experimental validation of self-heating 
+simulations and projections fo… (IEEE, 
+2014) DOI: 10.1109/irps.2014.6861186
+實測為平面（FD）元件；
+FinFET 部分僅為有限元素模擬
+展望
+摘要無數值（未提 Rth/dT 具體數字）
+摘要未給；全文未讀
+confirmed
+Analytical Thermal Model for 
+Self-Heating in Advanced FinFET Devices 
+W… (IEEE, 2013) DOI: 10.1109/tcad.2013.2
+248194
+SOI/bulk multifin FinFET
+structures (analytical model
+vali…
+Rth/dT sensitivity vs fin geometry is
+figure-level; not accessible without
+full text
+not applicable (thermal
+model paper)
+confirmed
+Self-heat reliability considerations on 
+Intel's 22nm Tri-Gate technolo… (IEEE, 
+2013) DOI: 10.1109/irps.2013.6532036
+Intel 22nm bulk tri-gate
+(FinFET) production
+technology
+not accessed (full text paywalled)
+not accessed
+confirmed
+Experimental analysis and modeling of 
+self heating effect in dielectri… (IEEE, 
+2013) DOI: https://ieeexplore.ieee.org/doc
+ument/6576663
+dielectric-isolated (SOI)
+FinFET vs 45nm planar SOI
+not accessed; abstract: scaled
+FinFET-on-dielectric shows higher
+normalized thermal resistance than
+45nm planar SOI, as …
+not accessed
+confirmed
+Assessment of NBTI in Presence of 
+Self-Heating in High-k SOI FinFETs (IEEE, 
+2012) DOI: 10.1109/led.2012.2213572
+high-k SOI FinFET (silicon)
+not quantified in abstract
+VERIFIED from abstract:
+no-SH NBTI stress at
+Vgs=-2V, Vds=0V at T=25C
+and 125C; with-SH stress at
+ro…
+confirmed
+RF Extraction of Self-Heating Effects in 
+FinFETs (IEEE, 2011) DOI: 
+10.1109/ted.2011.2162333
+n-channel SOI FinFETs,
+various fin width / fin
+number / fi…
+figure-level, not verified
+not verified (full text not
+accessed)
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 7 頁
+論文 / IEEE / 年 / DOI
+元件
+Rth / ΔT / 關鍵數字
+偏壓 / 其他
+查證
+Thermal-aware device design of 
+nanoscale bulk/SOI FinFETs: 
+Suppression… (IEEE, 2011) DOI: 
+10.1109/iedm.2011.6131672
+nanoscale bulk FinFET vs SOI
+FinFET (electrothermal
+simula…
+not quantified in accessible text;
+abstract: bulk FinFET lattice
+temperature significantly lower
+than SOI FinFET owing t…
+not accessed
+confirmed
+Modulating self-heating effects in 
+FinFETs through doping engineering (非, 
+2026) DOI: 10.1063/5.0309190
+先進節點 Si FinFET
+Thomson heat 貢獻最大元件溫升約
+16%;降低延伸區摻雜梯度後峰值
+Thomson heat 減 66%、熱點溫升降
+13%——三個數字皆與摘要逐字核實
+相符
+saturation bias vs 典型 CMOS
+操作偏壓(摘要未給具體電壓值)
+reclassifie
+d
+Effect of Gate Oxide and Back Oxide 
+Materials on Self-Heating Effect i… (非, 
+2025) DOI: 10.26565/2312-4334-2025-3-3
+5
+n 通道矽 FinFET(SOI),TiN 閘極,
+Lgate=10 nm,通道厚 Tsi=9
+nm,通道寬 Wb=2…
+通道中心晶格溫度:Fig.3 約 320-380 
+K(各 gate/back oxide 組合,tox 
+1.0-1.5 nm);Fig.5 隨 TBOX 
+10->1000 nm 由約 300 K 升至約 
+550 K(HfO2 BOX 最高、S…
+Fig.5(BOX 掃描):VDS=0.75 V、
+VG=1.5 V,gate oxide HfO2
+tEOT=1.2 nm
+value_corr
+ected
+Comparative study of the self-heating 
+effect in the accumulation and i… (非, 
+2024) DOI: https://arxiv.org/abs/2402.108
+58
+SOI FinFETs, Lg = 10 nm, Tsi
+= 9 nm, fin width Wb = 22
+nm,…
+Confirmed from Fig. 4: channel
+lattice T ~368.5-370.5 K (inversion
+FinFET) vs ~455-458 K (JL FinFET)
+along channel at Vd…
+Fig. 4 temperature readout
+at Vd = 0.75 V, Vg = 1.6 V
+(printed in Fig. 4 caption —
+improves on candi…
+confirmed
+Integrated modeling of Self-heating of 
+confined geometry (FinFET, NWFE… (非, 
+2018) DOI: 10.1016/j.microrel.2017.12.034
+Sub-20 nm silicon FinFET,
+nanowire FET, nanosheet FET
+(con…
+not extracted
+n/a (full text not accessed)
+confirmed
+Impact of self-heating effect on the 
+performance of hybrid FinFET (非, 2018) 
+DOI: 10.1016/j.mejo.2018.04.015
+Hybrid FinFET (silicon),
+variable channel length, fin
+widt…
+Lattice T 726.5 -> 495.6 K vs pitch 
+(up to ~430 K above ambient at 
+tight pitch)
+not stated at abstract level
+confirmed
+Analysis on Self-Heating Effect in 7 nm 
+Node Bulk FinFET Device (非, 2016) DOI: 
+10.5573/jsts.2016.16.2.204
+7nm node 非矩形 bulk
+FinFET(ITRS 2013 LP),含 W
+contact via 與 C…
+ΔTLmax~37.1 K(hotspot TL=337.1
+K @TA=300K);兩元件互連(一開一關)
+時 hotspot 329.3 K;兩管串聯時
+320.4 K(Tr.1 實際壓降僅約 0.59 V,非
+等偏壓比較)
+VGS=VDS=0.78 V, TA=300
+K(Figs.5-7 標注);DIBL=37.0
+mV/V
+confirmed
+DC self-heating effects modelling in SOI 
+and bulk FinFETs (非, 2015) DOI: 
+10.1016/j.mejo.2015.02.003
+奈米級 SOI 與 bulk Si FinFET,
+單 fin 至 multi-fin/multi-finge
+r
+not accessed
+not accessed
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 8 頁
+六、可靠度 / 其他指標（HCI、BTI、TDDB、gm/gd、電路級；34 篇）
+自熱對可靠度壽命與類比/RF 指標的影響，含 gm/gd 退化。
+論文 / IEEE / 年 / DOI
+元件
+關鍵數字 / 指標
+偏壓 / ΔT
+查證
+Impact of Electro-Thermal Transport on 
+HCI and BTI Lifetime of Twin Na… (IEEE, 
+2025) DOI: 10.1109/tdmr.2025.3570616
+twin Si GAA nanowire FETs
+compared in two operational
+mode…
+junctionless shows ~15.2% better
+thermal reliability and
+~26.7%/37.6% better HCI/BTI
+lifetime than inversion-mode (DC);
+…
+bias:not accessible (full text
+paywalled); tran… | dT:not in
+abstract
+confirmed
+ML-Driven Transistor Self-Heating 
+Analysis From TCAD to Large IP Circu… 
+(IEEE, 2025) DOI: 10.1109/access.2025.357
+6161
+先進 CMOS 電晶體(TCAD 訓練
+ML;搜尋證據顯示方法為
+technology-agnostic,涵蓋
+FD…
+SHE-aware aging guard
+band:Vth-shift 估計自保守常數 50
+mV 精化至 31 mV(38% 縮減為推導值,
+非原文引句)
+bias:not accessed | dT:ML 預
+測每電晶體 SHE 溫度,對 TCAD
+參考之平均誤差 0.1 K
+confirmed
+On the Output Conductance Dispersion 
+due to Traps and Self-Heating in … (IEEE, 
+2024) DOI: 10.1109/esserc62670.2024.107
+19502
+大面積 nMOS：bulk、FDSOI、
+bulk FinFET 三種架構並列
+gDD 頻譜在低/高 VGS 呈相反趨勢；
+自熱與缺陷（trap）貢獻分離；改善
+由 gDD 頻散萃取 Rth 的準確度；ZTC
+相關異常觀察
+bias:低/高 VGS 對比；在 DC
+轉移特性溫度靈敏度變號（ZTC）
+附近的 VGS 觀察…
+confirmed
+Multiphysics Simulation of 
+Self-Heating-Induced Thermal Stress 
+Effects… (IEEE, 2024) DOI: 
+10.1109/ted.2024.3430255
+p-type GAA stacked
+nanosheet FET
+thermal stress alters band
+structure, DOS, hole effective mass,
+hole density, valence subband
+profiles
+bias:not accessible (full text
+paywalled) | dT:not in
+abstract
+confirmed
+Electrothermal Effects on Hot Carrier 
+Injection Reliability of n-Type … (IEEE, 
+2024) DOI: 10.1109/ted.2023.3346840
+n 型 FinFET(FreePDK15 15nm
+製程,九級環形振盪器,含經驗證
+之 layout)
+HCI 引致 TVS(threshold voltage
+shift)vs 供應電壓與熱環境(thermal
+surrounding)
+bias:RO 振盪電壓(AC 應力,時
+變),VDD 掃描;細節在全文 | dT:
+瞬態空間溫度響應(數值在全文,
+未讀取)
+confirmed
+Impact of Device-to-Device Thermal 
+Interference Due to Self-Heating on… 
+(IEEE, 2024) DOI: 10.1109/access.2024.336
+6347
+7-nm 節點堆疊奈米片 FET 對
+(He-FET 加熱源 + 鄰近
+Co-FET),矽,VIT Vellore
+Co-FET 下層通道電子遷移率較上層低
+4.25%;最佳化後 fT = 131.5 GHz、
+fmax = 435 GHz;最佳 IDS = 30 nm、
+STI 深度 = 50 nm
+bias:not accessed | dT:摘要未
+印出 K 數值;全文 PDF 被阻擋未
+能取得
+confirmed
+Demonstration of a Nanosheet FET With 
+High Thermal Conductivity Materi… (IEEE, 
+2023) DOI: 10.1109/ted.2023.3241884
+GAA stacked nanosheet FET
+with crystalline
+diamond-like-ca…
+geometry dependence (Lg, Tw,
+TBOX, NS) on thermal and
+electrical reliability
+bias:not accessible (full text
+paywalled) | dT:lattice-tempe
+rature reduction via DLC
+BOX …
+confirmed
+Transient Self-Heating Effects on 
+Mixed-Mode Hot Carrier and Bias Temp… 
+(IEEE, 2023) DOI: 10.1109/ted.2023.33120
+53
+奈米級 p 型 FinFET(實測元件;
+北大 Runsheng Wang/Ru
+Huang 團隊)
+mixed-mode HCD-BTI 老化模型、電
+路老化(aging)預測精度
+bias:mixed VG/VD 應力條件(
+細節在全文,未讀取) | dT:瞬態
+SHE 溫升(數值在全文,未讀取)
+confirmed
+Self-heating effect of GAAFET and FinFET 
+for over 2-V applications usi… (IEEE, 2022) 
+DOI: 10.1109/iceic54506.2022.9748640
+類比用 FinFET 與 GAAFET（
+>2 V 操作）TCAD 結構
+FinFET vs GAAFET 的 SHE 對比；
+dummy pattern 熱隔離設計；關鍵字
+含 thermal noise、CIS/ISP 應用
+bias:>2 V 高壓類比應用；確切 
+VGS/VDS 未取得
+confirmed
+A Method to Isolate Intrinsic HCD and 
+NBTI Contributions Under Self He… (IEEE, 
+2022) DOI: 10.1109/ted.2022.3172055
+GAA stacked nanosheet
+(GAA-SNS) p-channel FETs
+with varyin…
+pure NBTI vs pure HCD kinetics
+separated under SH; end-of-life
+degradation projected across
+VG/VD map — supports the 'SH…
+bias:multiple VG and VD
+stress conditions and m… |
+dT:not in abstract
+confirmed
+Analysis of Self-Heating Effects in 
+Multi-Nanosheet FET Considering Bo… 
+(IEEE, 2022) DOI: 10.1109/ted.2022.31413
+27
+3-nm-node multi-nanosheet
+FET (mNS-FET); bulk
+substrate, P…
+SHE-induced lifetime reduction:
+15.1-22.1% (logic RO), 53.5-89.9%
+(two analog circuits, with possible
+circuit malfunctio…
+bias:dynamic circuit
+operation; VDD not stated …
+| dT:channel T rise larger with
+BO than without…
+confirmed
+Understanding and Modeling Opposite 
+Impacts of Self-Heating on Hot-Car… 
+(IEEE, 2022) DOI: 10.1109/irps48227.2022.
+9764515
+n 通道 Si FinFET + p 通道奈米
+線（NW）FET（imec）
+摘要逐字證實核心結論：nFinFET 中 
+SH 對載子傳輸的影響與鍵斷裂熱分量
+增強互相抵消->HCD 受 SH『輕微抑
+制』；pNWFET 中兩因素同向
+->HCD 被 SH 加速
+bias:多組 HC 應力條件；具體
+數值需讀全文
+confirmed
+Electro-Thermal Performance Boosting in 
+Stacked Si Gate-All-Around Nan… (IEEE, 
+2021) DOI: 10.1109/ted.2021.3095038
+垂直堆疊 Si GAA nanosheet
+FET,S/D 接觸工程:M0-wrap
+around S/D epi、…
+Rth,eff 與 TL,max 降低 >11%(M0 接
+觸工程 vs 傳統 M0-epi);nanosheet 
+層間結溫差降低->inter-sheet VT 差
+異縮小;M0-trench 為電/熱最佳方案
+bias:摘要未載明 | dT:TL,max 降
+低(隨 Rth,eff 一併 >11% 改善);
+絕對值在圖級,未取得
+reclassifie
+d
+Self-heating Effects Measured in Fully 
+Packaged FinFET Devices (IEEE, 2021) 
+DOI: 10.1109/miel52794.2021.9569208
+已封裝之商用 FinFET 元件
+自熱的頻率相依性（動態 SHE）；封
+裝內測試方法；元件級與系統級溫升
+相關性
+bias:切換操作（頻率相依）；
+確切偏壓未取得（全文未讀） |
+dT:電流引致自熱溫升實測至 1
+GHz、外推至 3 GHz；全晶片
+動態功耗溫升亦有評估（…
+confirmed
+Minimizing Excess Timing Guard Banding 
+Under Transistor Self-Heating T… (IEEE, 
+2021) DOI: 10.1109/access.2021.3057900
+FinFET 技術(先進節點,矽;裝置
+到電路/處理器層級,KIT)
+ZTC 偏壓可達近零 SHE timing guard
+band;存在 thermal guard band 與降
+壓性能損失之 trade-off(量化值在全文
+圖表層級,未讀取)
+bias:not accessed | dT:摘要未
+印出;全文量化數字(節點、dT、
+guard band %)未能取得
+(scisp…
+confirmed
+Reliability Modeling and Analysis of 
+Hot-Carrier Degradation in Multip… (IEEE, 
+2019) DOI: 10.1109/ted.2019.2905053
+14 nm SOI n-channel FinFETs
+(IBM technology),
+multiple-fin…
+SH-enhanced HCD; AC-vs-DC
+stress frequency dependence; bulk
+vs interface trap partitioning;
+empirical SH-aware reliabili…
+bias:DC and high-frequency
+AC HCI stress bias; …
+confirmed
+Self-Heating Effects on Hot Carrier 
+Degradation and Its Impact on Logi… 
+(IEEE, 2019) DOI: 10.1109/tdmr.2019.2916
+230
+Bulk FinFETs (GlobalFoundrie
+s 14nm-class) + logic ring
+osc…
+Abstract finding: HC degradation
+modulation due to SH is only
+significant for logic PFETs at highly
+accelerated DC condi…
+bias:HCI stress, highly
+accelerated DC vs moder…
+confirmed
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 9 頁
+論文 / IEEE / 年 / DOI
+元件
+關鍵數字 / 指標
+偏壓 / ΔT
+查證
+New Insight Into Negative Bias 
+Temperature Instability Degradation 
+Dur… (IEEE, 2019) DOI: 
+10.1109/led.2019.2930077
+14-nm bulk p-FinFET
+(Samsung/SNU, silicon)
+NBTI+SHE 下之 Vth 漂移;長時間
+(10-10^3 s)冪次律時間指數 n 隨
+|VDS| 增大而下降,證明 DC 應力下
+Vth 漂移由 NBTI(而非 HCD)主導
+bias:VGS = -1.3 V,VDS 掃至
+-1.3 V,應力時間 10 s ~ 10^… |
+dT:摘要未印出數值
+confirmed
+An Unique Methodology to Estimate The 
+Thermal Time Constant and Dynami… 
+(IEEE, 2018) DOI: 10.1109/iedm.2018.8614
+479
+advanced TSMC bulk FinFET
+technology (node
+unspecified)
+thermal time constant of advanced
+FinFETs; dynamic (AC/duty-cycle)
+vs static SHE impact on reliability
+lifetime evaluati…
+bias:not verified (full text not
+accessed) | dT:figure-level,
+not verified
+confirmed
+An Experimental Approach to 
+Characterizing the Channel Local 
+Temperatu… (IEEE, 2018) DOI: 
+10.1109/jeds.2018.2859276
+14 nm HK/MG bulk FinFET
+(n- and p-type), channel
+lengths s…
+Rth increases rapidly as channel
+length scales to 20 nm
+(abstract-level)
+bias:Saturation Id-Vds; exact
+VGS/VDS not verif… |
+dT:Highest temperature at
+drain edge; pFinFET…
+confirmed
+Self-Heating Effects on Hot Carrier 
+Degradation and its Impact on Ring… 
+(IEEE, 2018) DOI: 10.1109/iirw.2018.87270
+93
+Bulk FinFETs (GlobalFoundrie
+s 14nm-class) + ring
+oscillato…
+Abstract finding: HC degradation
+modulation due to SH only
+significant for logic PFETs at highly
+accelerated conditions;…
+bias:HCI stress / RO
+operation; exact V not acc…
+confirmed
+Self-heating-aware CMOS reliability 
+characterization using degradation… 
+(IEEE, 2018) DOI: 10.1109/irps.2018.83535
+41
+on-chip FET 陣列（imec；摘
+要僅稱 FET/VLSI devices，未
+明寫 FinFET）
+摘要明文：『by experimental
+assessment of thermal resistance
+and degradation activation
+energies, we can project a
+self-heatin…
+bias:整個可量測 {Vg,Vd} 偏壓
+空間（摘要明文）
+confirmed
+Relaxation of Self-Heating-Effect for 
+Stacked-Nanowire FET and p/n-Sta… 
+(IEEE, 2018) DOI: 10.1109/jeds.2018.28824
+06
+垂直堆疊矽奈米線 FET;p/n-sta
+cked nanowire 6T-SRAM(Tok
+yo Tech)
+p/n-stacked 6T-SRAM 版圖面積約
+-15%(vs 傳統 cell)
+bias:not accessed(全文未能取
+得) | dT:摘要僅定性描述奈米線
+區晶格溫度「considerably
+decreased」;K …
+confirmed
+Investigation of Electrothermal Behaviors 
+of 5-nm Bulk FinFET (IEEE, 2017) DOI: 
+10.1109/ted.2017.2766214
+5 nm node bulk FinFET
+(scaled per ITRS)
+AC delay and BTI figures of merit vs
+device parameters; S/D contact
+scheme design improves both
+performance and reliabil…
+bias:not accessed (closed
+access) | dT:not accessed
+confirmed
+Electrothermal Effects on Hot Carrier 
+Injection in n-Type SOI FinFET U… (IEEE, 
+2017) DOI: 10.1109/ted.2017.2728083
+50-nm 節點 n 型 SOI FinFET(
+反相器中之 nFinFET;含
+gradual-width fin …
+HCI 引致 Vth shift(PRBS 略大於同頻
+AC);gradual-width fin 降低靜態溫度
+但對動態(AC/PRBS)改善有限
+bias:反相器 circuit-speed 偏壓:
+step/AC/PRBS 訊號,頻率掃描
+(… | dT:瞬態溫度峰值:PRBS < 
+AC(同頻,因邏輯轉換較少);頻率
+越高 SHE 越嚴重(…
+confirmed
+Self-heating impact on TDDB in bulk 
+FinFET devices: Uniform vs Non-uni… 
+(IEEE, 2016) DOI: 10.1109/iirw.2016.79048
+98
+bulk FinFET（GLOBALFOUND
+RIES 先進節點）
+TDDB 壽命隨 VD 增加而下降，與升溫
+應力一致；閘壓冪次律在不同 VD 下
+保持；正常操作下 SHE 有限、電路級
+TDDB 未劣化
+bias:TDDB 應力於多個 VD 值
+；確切電壓需讀全文
+confirmed
+Self-heating and its implications on hot 
+carrier reliability evaluatio… (IEEE, 2015) 
+DOI: 10.1109/irps.2015.7112726
+Bulk and SOI FinFET-era
+technologies (IBM);
+geometry not s…
+SH effect on activation energy Ea;
+SH-induced HCD enhancement;
+SH-corrected lifetime
+methodology; DC-vs-AC (ring
+oscilla…
+bias:HCI stress conditions;
+exact values not in…
+confirmed
+Self-heating characterization of FinFET 
+SOI devices using 2D time reso… (IEEE, 
+2015) DOI: 10.1109/irps.2015.7112672
+SOI FinFET（IBM 14nm 世代
+；個別元件與密集陣列）
+off-state 漏電流受自熱調變（定量）
+；摘要明文宣稱『first direct
+measurement of the self-heating
+from individual FinFET devices』
+bias:摘要未給；全文未讀 | dT:
+摘要無數值
+confirmed
+Impact of source (drain) doping profiles 
+and channel doping level on s… (非, 2025) 
+DOI: 10.1016/j.micrna.2024.208015
+SOI FinFET (silicon), constant
+vs analytical S/D doping pr…
+Vth and Ion/Ioff vs S/D doping
+profile and channel doping level
+bias:not extracted (full text
+not accessed; CC-… |
+dT:Highest channel-center
+lattice T for const…
+confirmed
+A simulation study on optimizing the 
+self-heating and hot carrier effe… (非, 
+2025) DOI: 10.1007/s12043-025-02998-1
+SOI 型矽 FinFET,提出
+heterodielectric
+buried-oxide (HDB) 結構:BO…
+熱阻降低、impact ionization 率下降(
+熱載子抑制)、band-gap narrowing
+論證,皆為定性
+bias:未於可讀取全文段落中明
+示 | dT:未給出絕對值(僅圖形層
+級)
+confirmed
+Self-Heating Effect Coupled Compact 
+Model to Predict Hot Carrier Injec… (非, 
+2025) DOI: 10.3390/app15052351
+奈米級 bulk FinFET(compact-
+model 層級;含寬度相依與基板
+電壓相依)
+含 SHE 貢獻之 HCI 退化/元件壽命預
+測(次要指標:reliability lifetime)
+bias:涵蓋多種 stress 條件(不同
+載子能量區間) | dT:摘要未給出
+confirmed
+A new characterization model of FinFET 
+self-heating effect based on Fi… (非, 
+2024) DOI: 10.1016/j.mee.2024.112155
+FinFET (n/p); node not stated
+in abstract-level sources ac…
+delta-gm vs delta-T relationship for
+SHE characterization (gm is a
+requested secondary metric);
+circuit-level applicabil…
+bias:CORRECTED: abstract
+states characterizatio… |
+dT:Characterization accuracy
+delta-T differen…
+value_corr
+ected
+Substrate BOX engineering to mitigate 
+the self-heating induced degrada… (非, 
+2022) DOI: 10.1016/j.mejo.2022.105590
+堆疊 GAA nanosheet FET,S/D
+下方以 crystalline diamond
+BOX(BOXNS…
+有效熱阻 Reff 降低、ION/IOFF 改善、
+300-370 K 環溫下晶格溫度波動較小(
+皆 BOXNS vs SiONS)
+bias:摘要未載明;環境溫度變異
+範圍 300-370 K | dT:diamond
+BOX 較 SiO2 BOX 晶格溫度降
+低 13.5 K(摘要數字,…
+confirmed
+Influence of Joule effect on thermal 
+response of nano FinFET transisto… (非, 
+2021) DOI: 10.1016/j.spmi.2021.106980
+20 nm 矽 FinFET
+準彈道熱傳模型精度(優於 DPL 與
+C-V 模型)
+bias:摘要未載明 | dT:暫態溫度
+演化為圖形層級,摘要無絕對 dT
+value_corr
+ected
+FinFET SHE 飽和區 Ion 下降 % 文獻目錄（121 篇）
+第 10 頁
+七、環境溫度掃描（ta_sweep）— 注意：這不是 SHE 效應（4 篇）
+這些論文的 % 來自改變「環境溫度」而非自熱，不可當 SHE 劣化基準引用（最常見的分類陷阱，例如 Rathore 2022 的 -8.2%）。
+論文 / IEEE / 年 / DOI
+元件
+其 % 數字（非 SHE）
+偏壓
+查證
+Design Optimization of Three-Stacked 
+Nanosheet FET From Self-Heating E… 
+(IEEE, 2022) DOI: 10.1109/tdmr.2022.3181
+672
+Three-stacked Si nanosheet
+FET; partially-depleted
+silicon…
+Abstract states SHE 'raises lattice
+temperature several degrees above
+ambient and degrades the driving
+current…
+not accessed
+confirmed
+Ambient Temperature-Induced Device 
+Self-Heating Effects on Multi-Fin S… (IEEE, 
+2020) DOI: 10.1109/ted.2020.2975416
+Multi-fin Si FinFET CMOS
+inverter / ring oscillator,
+N-14 …
+No device-level Ion % in abstract
+(confirmed); circuit-level
+degradation (delay, noise margin,
+gain) quantifie…
+not accessed (closed access)
+confirmed
+Ambient Temperature-Induced Device 
+Self-Heating Effects on Multi-Fin S… (IEEE, 
+2018) DOI: 10.1109/ted.2018.2834979
+Si 3-fin bulk n-FinFET,
+sub-14-nm technology node
+No % in abstract (confirmed);
+performance-metric degradation
+vs TA and TCR is figure-level only
+not accessed (closed access)
+confirmed
+Study on the regulation factors and 
+mechanism of self-heating effects … (非, 
+2024) DOI: 10.1088/1361-6641/ad689f
+14 nm bulk FinFET,圓柱梯形(
+非矩形)fin;FinAngle 84°-90°
+掃描
+TA 300->400K:驅動電流僅 
+-0.21%(2.33051e-5->2.3257e-5 
+A);TA 220K 時 +0.87%。此為 
+ta_sweep,不得計入 SHE%;論文無 
+electrothermal-vs-…
+Vgs=Vds=0.8 V;TA=300-400
+K(另有 220 K 點)
+confirmed
+資料來源：多代理文獻獵取工作流（loop-until-dry，第 1-2 輪完成）-> 逐篇對抗式查證（confirmed 105、value_corrected 6、
+reclassified 6、plausible_unverified 4；0 篇 likely_hallucinated）。第 3 輪追加獵取因帳號 session 上限中止，邊際新增有限；本
+目錄為已查證 121 篇之完整彙整。標「圖層級/paywall/not accessed」之數字，引用前務必自讀原文；標「reclassified」者多為原
+被誤標成 SHE 的 ta_sweep 已更正。

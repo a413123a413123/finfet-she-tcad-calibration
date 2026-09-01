@@ -1,0 +1,12 @@
+[
+ {"id":"二09","why":"判準帶主錨點本身（14nm n 7.26% / p 8.91% @VDS=0.7V）。全文可取得，四組 thermode SurfaceResistance（接觸 8.0e-4、基板 1.0e-2、Si/SiO2 2.0e-4、Si/HfO2 8.3e-4 cm²K/W、基板底 300 K）可直接抄進 deck。最貼合你的模擬情境。"},
+ {"id":"五44","why":"7nm bulk FinFET 全文。thermode 四接點架構（gate/source/drain/substrate 各自給 SurfaceResistance，而非設成理想等溫面）正是「thermode 貼太近通道就抹掉 SHE」的解方。另附一個原文功率單位不自洽的發現，重建後 Rth=1.05 MK/W 正落判準帶。"},
+ {"id":"二08","why":"3nm bulk FinFET 全文，判準帶另一錨點（n 10.6% / p 21.6% @VG=VD=0.7V）。同時給出 distributed 與 interfacial 兩種熱阻的合理區間，且明確拆出機械應力這個糾纏因子的貢獻。"},
+ {"id":"二15","width":0,"why":"22nm bulk FinFET 全文。SurfaceResistance 掃描區間 1e-5～1e-4 cm²K/W 可直接當上下界，材料熱導率整組可抄（Si bulk 1.48 vs Si fin 明顯降低）。是少數把熱邊界完整交代的公開全文。"},
+ {"id":"七04","why":"14nm bulk FinFET 全文，thermode 值可直接抄（S/D/G 三處 8e-4 cm²K/W、substrate 另設）。注意：本篇歸在第七章 ta_sweep，其 -0.21% 是環境溫度掃描的結果，不可當 SHE 劣化引用——但它的熱邊界設定與 SHE 段落仍然可用。"},
+ {"id":"三08","why":"堆疊 nanosheet GAA 全文，介面熱阻可直接對應 Sentaurus 設定（電極 2e-6、Si/SiO2 分佈式 2e-4 cm²K/W、熱接觸 300 K），且 Ion 抑制 1.81% 是原文印出的明確數字，不是圖層級。"},
+ {"id":"五18","why":"最容易被忽略的一篇。它指出 VT 與 pn-junction 溫度感測器低估真實峰值通道溫度約 3.7 倍——你若拿文獻的量測 ΔT 去校準 deck 的峰值晶格溫度而不做這個換算，會把 thermode 調得過度導熱，直接掉進判準帶「ΔIon<1%」的失敗區。"},
+ {"id":"四07","why":"錨定判準帶的另一半量級。實測 Rth ≈ 3.4e4 K/W，正對應「多鰭多指 RF 結構約 34 kK/W」；配合單鰭 1–4 MK/W，這兩個相差近百倍的量級是最容易搞錯的地方。另給熱時間常數 τth ≈ 17 ns，決定脈衝量測要多快才除得淨 SHE。"},
+ {"id":"三12","why":"Rth = 2.59 MK/W @VGS=VDS=0.7V、Nstack=1，而且 Rth 的定義（ΔTmax / total heat）原文明確寫出——你可以用完全相同的定義從自己的 deck 抽 Rth 直接比對，不必猜對方怎麼定義。"},
+ {"id":"二16","why":"本次查證翻案的一篇：原目錄記「無任何 %」，實際自 KoreaScience 取得免費全文後，Figure 3 標註 SOI 19% / bulk 14%，並有 Id 絕對值。熱邊界用的是「幾何延伸 + 遠端等溫壁」（PMD 200nm 之上 300K heat sink、下方 1.8μm 基板底 300K），可與二15 的 SurfaceResistance 做法互為對照。"}
+]

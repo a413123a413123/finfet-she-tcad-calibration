@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# make_review.py 產生的片段預覽（僅供視覺檢查用，每次重跑會重建）
+_frag_*.html

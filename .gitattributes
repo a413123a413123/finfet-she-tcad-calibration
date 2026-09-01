@@ -1,0 +1,11 @@
+# 二進位檔：禁止行尾轉換（core.autocrlf=true 會破壞 PDF）
+*.pdf   binary
+
+# 文字檔統一以 LF 存進 repo
+*.md    text eol=lf
+*.py    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
+*.html  text eol=lf
